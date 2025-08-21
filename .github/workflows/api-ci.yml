@@ -8,15 +8,12 @@ on:
       - ".github/workflows/api-ci.yml"
 
 defaults:
-  runs:
+  run:
     working-directory: ./api
 
 jobs:
   unit-test:
     runs-on: macos-latest
-  defaults:
-    run:
-      working-directory: ./api
   steps:
     - name: Checkout repository
       uses: actions/checkout@v4
