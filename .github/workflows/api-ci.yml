@@ -27,7 +27,7 @@ jobs:
         run: npm ci
       - name: run unit test
         run: npm run test
-      - name: Upload test results if failed
+      - name: Upload test results if failed :)
         if: failure()
         uses: actions/upload-artifact@v4
         with:
